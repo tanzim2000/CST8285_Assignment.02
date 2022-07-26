@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="Author" content="Tanzim Ahmed Sagar">
+            <meta name="Group" content="04">
+            <meta name="Description" content="Assignment 02">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link href="https://fonts.googleapis.com/css2?family=Saira:wght@800&Caveat:wght@500&family=Great+Vibes&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="css/uniform.css">
+            <link rel="stylesheet" href="css/homepage.css">
+            <title>Children Immunization Record System (CIRS)</title>
+        </head>
+        <body>
+            <!-- ============= Sticky NavBar ============= -->
+            <nav class="header navbar">
+                <a href="index.html" id="logo"><h3>C I R S</h3></a>
+                <ul>
+                    <li><a class="navanchor" href="">Vaccines</a></li>
+                    <li><a class="navanchor" href="">Register/Login</a></li>
+                    <li><a class="navanchor" href="">About Us</a></li>
+                </ul>
+            </nav>
+            <!-- ============= Hero Section ============= -->
+            <main class="hero">
+                <div class="formcontainer">
+                    <h1>Sign In</h1>
+                    <hr>
+                    <form action="registration.html" method="get" onsubmit="return validate();">
+                        <div class="textfield sectionEmail">
+                            <label for="email">Email Address</label>
+                            <input type="text" name="email" id="email" placeholder="Email">
+                            <p class="warningText" id="invalidEmailWarning"></p>
+                        </div>
+                        <div class="textfield sectionPassword">
+                            <label for="pass">Password</label>
+                            <input type="password" name="pass" id="pass" placeholder="Password">
+                            <p class="warningText" id="badPasswordWarning"></p>
+                        </div>
+                    </form>
+                </div>
+            </main>
+            <footer>
+                <address>@2022 Web Programming Assignment02 Group[4], All right reserved,  Mao Ye; Qingfang Tan; Tanzim Ahmed Sagar; Xiaopeng Li</address>
+            </footer>
+        </body>
+    </html>
