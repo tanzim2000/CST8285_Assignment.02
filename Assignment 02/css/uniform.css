@@ -71,6 +71,7 @@ section{
 }
 .hero {
     background-color: var(--lilac);
+    padding: 1.5rem 0rem;
 }
 footer {
     background-color: var(--yellow);
