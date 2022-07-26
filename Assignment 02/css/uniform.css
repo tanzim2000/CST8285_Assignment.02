@@ -1,8 +1,12 @@
 /* CSS Author: Tanzim Ahmed Sagar */
 :root{
+    --firefly: #0f2830;
     --emerald: #014751;
-    --green: rgb(0, 211, 127);
+    --green: #00d37f;
     --mint: #aff8c8;
+    --yellow: #ffeeb4;
+    --lilac: #d2c4fb;
+    --zircon: #F8FBFF;
 }
 *{
     padding: 0%;
@@ -10,20 +14,13 @@
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-    color:white;
-    cursor:default;
+    color: var(--zircon);
+    cursor: default;
     list-style-type: none;
-}
-th{
-    text-align: start;
-    padding-right: 5px;
 }
 section{
     scroll-snap-type: y mandatory;
     scroll-snap-align: center;
-}
-.makeitcenter{
-    margin-left: 48%;
 }
 .header {
     transition: all 0.5s;
@@ -72,129 +69,10 @@ section{
     font-size: 3.5rem;
     transition: 0.3s;
 }
-.about{
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-    display: flex;
-    align-items: center;
-    background-image: linear-gradient(to bottom, var(--emerald), var(--red));
+.hero {
+    background-color: var(--lilac);
 }
-.abouttable{
-    padding-left: 6rem;
-}
-.abouttitlecontainer{
-    border-right: 5px white solid;
-}
-.abouttitle{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 100;
-    font-size: 150px;
-    text-align: right;
-    padding-right: 10%;
-}
-#aboutbodycontainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 2rem;
-}
-.aboutbody{
-    padding-right: 200px;
-    padding-bottom: 15px;
-    font-size: 1rem;
-}
-.regularbtn{
-    padding: .25rem 3rem;
-    color: white;
-    background-color: transparent;
-    border: 2px solid white;
-    font-size: 1.5rem;
-    font-family: 'Caveat', cursive;
-    cursor: pointer;
-}
-.education{
-    padding-top: 6rem;
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(to bottom, rgb(0, 0, 0), var(--green), var(--green), var(--green));
-}
-h5{
-    font-weight: lighter;
-}
-#education #educationtxt1{
-    padding-top: 5rem;
-}
-#collegename{
-    text-transform: uppercase;
-    font-size: 7rem;
-    margin-left: 2%;
-}
-.collegemotto{
-    text-align:center;
-    padding-bottom: 6%;
-}
-.articleh2{
-    padding-top: 3rem;
-    margin-left: 5%;
-    font-size: 2rem;
-}
-.bodyandimage{
-    max-width: 100%;
-    display: flex;
-}
-.articlebody{
-    font-size: 1.5rem;
-    padding: 5px;
-    text-align: justify;
-    margin-left: 7%;
-}
-div > .articlebody{
-    margin: 0% 3% 0% 3%;
-}
-.paralist > li{
-    padding-bottom: 3px;
-}
-.collegeemblem{
-    width: auto;
-    height: 25rem;
-    margin: 0%;
-}
-.btncontainer{
-    display: flex;
-    align-items: center;
-    padding-top: 2rem;
-    padding-left: 55%;
-}
-.collegewebsitebtn {
-    padding: .25rem 2rem;
-    border: 6px solid white;
-    line-height: 2.5;
-    text-align: center;
-    color: #fff;
-    background-color: transparent;
-    cursor: pointer;
-    font-family:system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 800;
-}
-.collegewebsitebtn:hover {
-    background-color: white;
-    border: 3px solid var(--green);
-    box-shadow: 0 0 0 3px #fff;
-    transition: 0.3s;
-    color: var(--green);
-}
-.regularbody{
-    background-image: linear-gradient(to bottom, var(--red), rgb(0, 0, 0));
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    margin: 0%;
-}
-#coursesbody{
-    background-image: linear-gradient(to bottom, var(--green), rgb(0, 0, 0));
-}
+/*==================FOR FUTURE WORK======================*/
 .cv-topbar-cascade{
     display: flex;
     max-width: 100%;
