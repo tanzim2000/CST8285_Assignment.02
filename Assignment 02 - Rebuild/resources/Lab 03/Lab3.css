@@ -1,0 +1,101 @@
+/*Cascade Style Sheet by Tanzim Ahmed Sagar*/
+
+*{
+    font-family: sans-serif;
+    color: #404040;
+}
+
+main{
+    color: #404040;
+    font-size: 14pt;
+}
+
+body{
+    background-color: #DDD78D; 
+}
+
+.header{
+    padding: 10px;
+    border: 3px #404040 solid;
+    background-color: #60594D;
+}
+
+.footer{
+    padding: 10px;
+    border: 3px #404040;
+    background-color: #60594D;
+}
+
+#title{
+    font-size: xx-large;
+    color: #93A29B; 
+}
+
+.nav{
+    margin: 10px;
+    text-align: center;
+}
+
+.button{
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.button:hover{
+    color: #8b635c;
+    background-color: #93A29B;
+}
+
+.anchor{
+    text-decoration: none;
+}
+
+.heading{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.list_heading{
+    font-weight: bold;
+}
+
+#waterfall{
+    float: right;
+    width: 25%;
+    margin: 10px;
+}
+
+.para{
+    margin: 10px 0px 10px 0px;
+}
+
+.quote{
+    background-color: #dcbf85;
+    margin: 0px 20px;
+    padding: 10px;
+}
+
+
+
+#footer{
+    color: #93A29B; 
+    text-decoration: none;
+    margin-left: 50%;
+}
+
+#footer:hover{
+    color: #8b635c;
+}
+
+#credit{
+    font-size: 10pt;
+    font-style: italic;
+    color: #93A29B;
+    margin-right: auto;
+    text-align: right;
+}
+
+
+
+

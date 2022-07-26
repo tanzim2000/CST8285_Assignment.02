@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Tanzim Ahmed Sagar">
+    <meta name="Description" content="Lab 02">
+    <meta name="email" content="saga0025@algonequinlive.com"/>
+    <meta name="date created" content="June 01 2022"/>
+    <title>Lab 02 | Order Form</title>
+</head>
+<body>
+    <fieldset>
+      <h2 style="color:rgba(255, 0, 0, 0.552);">Order Form</h2>
+      <fieldset>
+        <legend>Basic Information</legend>
+        <form>
+          <table>
+            <tr>
+              <td><label for="name">Name: </label></td>
+              <td><input type="text" id="name" name="student name" disabled value="Tanzim Ahmed Sagar"></td>
+            </tr>
+            <tr>
+              <td><label for="email">Email: </label></td>
+              <td><input type="text" id="email" name="email"></td>
+            </tr>
+              <td><label for="address" id="address">Address: </label></td>
+              <td><input type="text" id="address.field" name="address_field"></td>
+            <tr>
+              <td><label for="postcode">Postal Code: </label></td>
+              <td><input type="text" id="postcode" name="postcode"></td>
+            </tr>
+          </table>
+        </form>
+      </fieldset>
+    <fieldset>
+        <legend>Product Information</legend>
+      <form>
+        <table border="1">
+          <tr align="center">
+            <td>Product</td>
+            <td>Part Number</td>
+            <td>Quantity</td>
+            <td>Unit Price</td>
+            <td>Subtotal</td>
+          </tr>
+          <tr>
+            <td>Box</td>
+            <td>AC100</td>
+            <td><input type="text" id="box.quantity" name="box_quantity"></td>
+            <td>$5</td>
+            <td><input type="text" id="box.total" name="box_total"></td>
+          </tr>
+          <tr>
+            <td>Coffee Table</td>
+            <td>AC200</td>
+            <td><input type="text" id="ctable.quantity" name="ctable_quantity"></td>
+            <td>$100</td>
+            <td><input type="text" id="ctable.total" name="ctable_total"></td>
+          </tr>
+          <tr>
+            <td>Chair</td>
+            <td>AC300</td>
+            <td><input type="text" id="chair.quantity" name="chair_quantity"></td>
+            <td>$150</td>
+            <td><input type="text" id="chair.total" name="chair_total"></td>
+          </tr>
+          <tr>
+            <td>Desk</td>
+            <td>AC400</td>
+            <td><input type="text" id="desk.quantity" name="desk_quantity"></td>
+            <td>$120</td>
+            <td><input type="text" id="desk.total" name="desk_total"></td>
+          </tr>
+          <tr>
+            <td>Computer Table</td>
+            <td>AC400</td>
+            <td><input type="text" id="comtable.quantity" name="comtable_quantity"></td>
+            <td>$130</td>
+            <td><input type="text" id="comtable.total" name="comtable_total"></td>
+          </tr>
+          <tr>
+              <td colspan="4" align="center">Total</td>
+              <td><input type="text" id="table.total" name="box_total"></td>
+          </tr>
+          </table>
+        </form>
+    </fieldset>
+    <br>
+    <form>
+        <h4>Credit Card Information</h4>
+        <label for = "cardtype">Card Type</label><br>
+        <input type="radio" name="cardtype_master" id="cardtype.master" value="MasterCard">
+        <label for="MasterCard">MasterCard</label><br>
+        <input type="radio" name="cardtype_visa" id="cardtype.visa" value="Visa">
+        <label for="Visa">Visa</label>
+        <input type="radio" name="cardtype_gift" id="cardtype.gift" value="Gift Card">
+        <label for="gift_card">Gift Card</label><br>
+        <label for="cardnumber">Card Number: </label>
+        <input type="text" id="C_Num" name="C.Num"><br>
+        <label for="exp.date">Expiry Date: </label>
+        <input type="date" name="exp.date" id="exp_date"><br>
+        <label for="delivary_address">Delivary Address: </label>
+        <input type="text" name="Address" id="Address" size="30"><br>
+        <button type="button" name="send" id="send.button">Send Order</button>
+        <button type="button" name="clear" id="clear.button">Clear Form</button>
+    </form>
+    </fieldset>
+</body>
+</html>
