@@ -72,6 +72,16 @@ section{
 .hero {
     background-color: var(--lilac);
 }
+footer {
+    background-color: var(--yellow);
+}
+footer > address {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    color: var(--firefly);
+    text-align: center;
+    padding: 1.5rem 0rem;
+}
 /*==================FOR FUTURE WORK======================*/
 .cv-topbar-cascade{
     display: flex;
