@@ -6,7 +6,7 @@
             <meta name="Group" content="04">
             <meta name="Description" content="Assignment 02">
             <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link href="https://fonts.googleapis.com/css2?family=Saira:wght@800&Caveat:wght@500&family=Great+Vibes&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Saira:wght@800&family=Great+Vibes&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="css/uniform.css">
             <link rel="stylesheet" href="css/login.css">
             <title>Children Immunization Record System (CIRS)</title>
@@ -25,18 +25,21 @@
             <main class="hero">
                 <div class="formcontainer">
                     <h1>Sign In</h1>
-                    <form action="registration.html" method="get" onsubmit="return validate();">
+                    <form action="" method="get" onsubmit="return validate();">
                         <div class="textfield sectionEmail">
-                            <label for="email">Email Address</label>
+                            <label for="email"></label>
                             <input type="text" name="email" id="email" placeholder="Email">
                             <p class="warningText" id="invalidEmailWarning"></p>
                         </div>
                         <div class="textfield sectionPassword">
-                            <label for="pass">Password</label>
+                            <label for="pass"></label>
                             <input type="password" name="pass" id="pass" placeholder="Password">
                             <p class="warningText" id="badPasswordWarning"></p>
                         </div>
                     </form>
+                </div>
+                <div class="createaccount-section">
+                    <p>Don't have an account? <a class="createaccount-btn" href="">Create one!</a></p>
                 </div>
             </main>
             <footer>
