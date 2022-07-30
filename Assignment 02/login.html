@@ -2,7 +2,7 @@
     <html lang="en">
         <head>
             <meta charset="UTF-8">
-            <meta name="Author" content="Tanzim Ahmed Sagar">
+            <meta name="Author" content="Mao Ye">
             <meta name="Group" content="04">
             <meta name="Description" content="Assignment 02">
             <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,29 +21,36 @@
                     <li><a class="navanchor" href="">About Us</a></li>
                 </ul>
             </nav>
-            <!-- ============= Hero Section ============= -->
             <main class="hero">
                 <div class="formcontainer">
                     <h1>Sign In</h1>
-                    <form action="" method="get" onsubmit="return validate();">
-                        <div class="textfield sectionEmail">
-                            <label for="email"></label>
-                            <input type="text" name="email" id="email" placeholder="Email">
-                            <p class="warningText" id="invalidEmailWarning"></p>
+                    <form id="form" action="TBD.php" method="post">
+                        
+                        <div class="textfield">
+                            <label for="email">Email Address</label>
+                            <input type="text" name="email" id="email" placeholder="Email" required>
+                            <br><small></small>
                         </div>
-                        <div class="textfield sectionPassword">
-                            <label for="pass"></label>
-                            <input type="password" name="pass" id="pass" placeholder="Password">
-                            <p class="warningText" id="badPasswordWarning"></p>
+
+                        <div class="textfield">
+                            <label for="pass">Password</label>
+                            <input type="password" name="pass" id="pass" placeholder="Password" required>
+                            <br><small></small>
                         </div>
+
+                        <button type="submit">Go!</button>
                     </form>
                 </div>
-                <div class="createaccount-section">
-                    <p>Don't have an account? <a class="createaccount-btn" href="">Create one!</a></p>
+
+                <div class="toRegister">
+                    <h2>------------------------- Don't have an account? -------------------------</h2>
+                    <button type="button" onclick="location.href='registration.html'">Go Register One!</a>
                 </div>
+                
             </main>
             <footer>
                 <address>@2022 Web Programming Assignment02 Group[4], All right reserved,  Mao Ye; Qingfang Tan; Tanzim Ahmed Sagar; Xiaopeng Li</address>
             </footer>
+            <script src="js/login.js"></script>
         </body>
     </html>
