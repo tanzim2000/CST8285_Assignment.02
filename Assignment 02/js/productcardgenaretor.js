@@ -75,4 +75,5 @@ function productListGenarator() {
         }
         elementIndex++;
     }
+
 }
