@@ -5,10 +5,12 @@
             <meta name="Author" content="Tanzim Ahmed Sagar">
             <meta name="Group" content="04">
             <meta name="Description" content="Assignment 02">
+            <title>Children Immunization Record System (CIRS)</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link href="https://fonts.googleapis.com/css2?family=Saira:wght@800&Caveat:wght@500&family=Great+Vibes&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+            <script src="js/productcardgenaretor.js"></script>
             <link rel="stylesheet" href="css/uniform.css">
             <link rel="stylesheet" href="css/catalog.css">
-            <title>Children Immunization Record System (CIRS)</title>
-            <script src="js/productcardgenaretor.js"></script>
         </head>
         <body>
             <!-- ============= Sticky NavBar ============= -->
@@ -16,17 +18,17 @@
                 <a href="index.html" id="logo"><h3>C I R S</h3></a>
                 <ul>
                     <li id="searchbar-container">
-                        <input class="regularsearchbar" type="text" placeholder="Search Vaccines">
+                        <input class="regularsearchbar" id="search" onkeyup="search()" type="text" placeholder="Search Vaccines">
                         <button class="regularbtn searchbtn">&#x1F50D;</button>
                     </li>
                     <li><a class="navanchor" href="login.html">Register/Login</a></li>
-                    <li><a class="navanchor" href="">About Us</a></li>
+                    <li><a class="navanchor" href="credit.html">About Us</a></li>
                 </ul>
             </nav>
             <!-- ============= List ============= -->
             <main>
-                <div id="catalogue-container">
-                </div>
+                <ul id="catalogue-container">
+                </ul>
                 <script>productListGenarator();</script>
             </main>
             <footer>
