@@ -10,6 +10,7 @@
             <link rel="stylesheet" href="css/uniform.css">
             <link rel="stylesheet" href="css/catalog.css">
             <title>Children Immunization Record System (CIRS)</title>
+            <script src="js/productcardgenaretor.js"></script>
         </head>
         <body>
             <!-- ============= Sticky NavBar ============= -->
@@ -26,22 +27,9 @@
             </nav>
             <!-- ============= List ============= -->
             <main>
-                <div class="horizontal-array">
-                    <div class="titledescription-packet">
-                        <div class="h3-container coursecode">
-                            <h3></h3>
-                        </div>
-                        <table class="detail-table">
-                            <tr>
-                                <td class="coursename" colspan="2"></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td class="rowrightalign-pref"></td>
-                            </tr>
-                        </table>
-                    </div>
+                <div id="catalogue-container">
                 </div>
+                <script>productListGenarator();</script>
             </main>
             <footer>
                 <address>@2022 Web Programming Assignment02 Group[4], All right reserved,  Mao Ye; Qingfang Tan; Tanzim Ahmed Sagar; Xiaopeng Li</address>
