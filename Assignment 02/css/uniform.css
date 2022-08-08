@@ -19,10 +19,6 @@
     cursor: default;
     list-style-type: none;
 }
-section{
-    scroll-snap-type: y mandatory;
-    scroll-snap-align: center;
-}
 .header {
     transition: all 0.5s;
     z-index: 997;
