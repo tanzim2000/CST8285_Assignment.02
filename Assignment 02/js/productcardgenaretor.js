@@ -63,14 +63,20 @@ function productListGenarator() {
         titleDescriptionPacket.appendChild(detailTable);
         var propertyIndex = 0;
         for (let key in vaccineData[elementIndex]) {
-            const row = document.createElement("tr");
-            detailTable.appendChild(row);
-            const propertyName = document.createElement("td");
-            row.appendChild(propertyName);
-            propertyName.appendChild(document.createTextNode(dataStructure[propertyIndex]));
-            const propertyValue = document.createElement("td");
-            row.appendChild(propertyValue);
-            propertyValue.appendChild(document.createTextNode(vaccineData[elementIndex][dataStructure[propertyIndex]]));
+            if (dataStructure[propertyIndex] == "Description"){
+
+            } else if (dataStructure[propertyIndex] == "Name"){
+
+            } else {
+                const row = document.createElement("tr");
+                detailTable.appendChild(row);
+                const propertyName = document.createElement("td");
+                row.appendChild(propertyName);
+                propertyName.appendChild(document.createTextNode(dataStructure[propertyIndex]));
+                const propertyValue = document.createElement("td");
+                row.appendChild(propertyValue);
+                propertyValue.appendChild(document.createTextNode(vaccineData[elementIndex][dataStructure[propertyIndex]]));
+            }
             propertyIndex++;
         }
         elementIndex++;
